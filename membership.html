@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+<link href="form.css" rel="stylesheet" type="text/css">
+<link href="formal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<row class="input col-">
+		<label for="fname" class="col-2">First Name:</label>
+		<input type="text" name="fname" class="col-3">
+		<label for="fname" class="col-2">Middle Intital:</label>
+		<input type="text" name="fname" class="col-1">
+		<label for="lname" class="col-2">Last Name:</label>
+		<input type="text" name="lname" class="col-3">
+	</row>
+		<br>
+		<fieldset>
+			<legend>Account</legend>
+			<label>User Name: <input type="text" name="username" maxlength="15"></label><br>
+			<label>Password: <input type="password" name="password" minlength="10"></label><br>
+			<label>Email address: <input type="email" name="email"></label><br>
+			<label>Membership Subscription Level:</label><br>
+			<label><input type="radio" name="subscription" value="Trash Bandit">Trash Bandit (basic)</label><br>
+			<label><input type="radio" name="subscription" value="Dumpster King">Dumpster King (better)</label><br>
+			<label><input type="radio" name="subscription" value="Garbage Lord" checked>Garbage Lord (best)</label>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Payment Information</legend>
+			<label>Card type:
+				<select name="cardtype" required>
+					<option value="">Select a card type</option>
+					<option value="Visa">Visa</option>
+					<option value="Mastercard">Mastercard</option>
+					<option value="AMEX">AMEX</option>
+					<option value="Raccoon Card">Raccoon Card (TPPS-USA's gift cards)</option>
+				</select>
+			</label><br>
+			<label>Card Number: <input type="tel" name="cardnumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required autofocus></label><br>
+			<label>Expiration Date: </label>
+			<label>Month: <input type="month" name="expirationdate" required></label>
+		</fieldset>
+		<br>
+</body>
+</html>
