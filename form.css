@@ -1,6 +1,7 @@
 /* CSS Document */
 .input label{
 	margin-bottom:5px;
+	width:auto;
 }
 .input input{
 	margin-bottom:5px;
