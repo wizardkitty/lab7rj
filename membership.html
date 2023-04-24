@@ -13,15 +13,15 @@
 	  <legend>Name</legend>
 	  <row class="input col-">
 		<label for="fname" class="col-2">First Name:</label>
-		<input type="text" name="fname" class="col-3 col-t-11">
+		<input type="text" name="fname" class="col-3 col-t-11 col-p-11">
 		<label for="fname" class="col-2">Middle Intital:</label>
-		<input type="text" name="fname" class="col-1 col-t-1" minlength="1" maxlength="1">
+		<input type="text" name="fname" class="col-1 col-t-1 col-p-11" minlength="1" maxlength="1">
 		<label for="lname" class="col-2">Last Name:</label>
-		<input type="text" name="lname" class="col-3 col-t-5">
+		<input type="text" name="lname" class="col-3 col-t-5 col-p-11">
 	  </row>
 	</fieldset>
 		<br>
-		<fieldset>
+		<fieldset class="col-">
 			<legend>Account</legend>
 			<label>User Name: <input type="text" name="username" maxlength="15"></label><br>
 			<label>Password: <input type="password" name="password" minlength="10"></label><br>
@@ -32,7 +32,7 @@
 			<label><input type="radio" name="subscription" value="Garbage Lord" checked>Garbage Lord (best)</label>
 		</fieldset>
 		<br>
-		<fieldset>
+		<fieldset class="col-">
 			<legend>Payment Information</legend>
 			<label>Card type:
 				<select name="cardtype" required>
@@ -48,7 +48,7 @@
 			<label>Month: <input type="month" name="expirationdate" required></label>
 		</fieldset>
 		<br>
-	    <fieldset>
+	    <fieldset class="col-">
 			<legend>Racoon Info</legend>
 			
 			  <label for="raccoon-count">Number of Raccoons at your last cookout?</label>
