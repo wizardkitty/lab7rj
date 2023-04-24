@@ -8,14 +8,18 @@
 </head>
 <!-- WIP -->
 <body>
-	<row class="input col-">
+	<form>
+	<fieldset>
+	  <legend>Name</legend>
+	  <row class="input col-">
 		<label for="fname" class="col-2">First Name:</label>
 		<input type="text" name="fname" class="col-3">
 		<label for="fname" class="col-2">Middle Intital:</label>
-		<input type="text" name="fname" class="col-1">
+		<input type="text" name="fname" class="col-1" minlength="1" maxlength="1">
 		<label for="lname" class="col-2">Last Name:</label>
 		<input type="text" name="lname" class="col-3">
-	</row>
+	  </row>
+	</fieldset>
 		<br>
 		<fieldset>
 			<legend>Account</legend>
@@ -44,5 +48,60 @@
 			<label>Month: <input type="month" name="expirationdate" required></label>
 		</fieldset>
 		<br>
+	    <fieldset>
+			<legend>Racoon Info</legend>
+			
+			  <label for="raccoon-count">Number of Raccoons at your last cookout?</label>
+			  <input type="number" id="raccoon-count" name="raccoon-count" min="2" max="6458432" required><br>
+  
+			  <label for="raccoon-pic">Upload pic (file)</label>
+			  <input type="file" id="raccoon-pic" name="raccoon-pic" multiple><br>
+  
+	  <label for="trash-color">Favorite trash can color</label>
+	  <input type="color" id="trash-color" name="trash-color" required><br>
+  
+	  <label for="color-type">Color type</label>
+	  <input type="text" id="color-type" name="color-type" required><br>
+  
+  <label for="raccoon-cleverness">Rate how clever raccoons are from 1 to 10?</label>
+  <input type="range" id="raccoon-cleverness" name="raccoon-cleverness" min="1" max="10" required><br>
+  
+  <label for="time-range">Best time of day to catch raccoons stealing your cat's food</label>
+  <input type="time" id="time-range" name="time-range" required><br>
+  
+  <label for="raccoon-food">Things you have witnessed raccoons eating?</label>
+  <br>
+  <input type="checkbox" id="cat-food" name="raccoon-food[]" value="cat food">
+  <label for="cat-food">Cat food</label>
+  
+  <br>
+  <input type="checkbox" id="smelly-garbage" name="raccoon-food[]" value="smelly garbage">
+  <label for="smelly-garbage">Smelly garbage</label>
+  
+  <br>
+  <input type="checkbox" id="crawfish" name="raccoon-food[]" value="crawfish">
+  <label for="crawfish">Crawfish</label>
+  
+  <br>
+  <input type="checkbox" id="eggs" name="raccoon-food[]" value="eggs">
+  <label for="eggs">Eggs</label>
+  
+  <br>
+  <input type="checkbox" id="ice-cream" name="raccoon-food[]" value="ice cream">
+  <label for="ice-cream">Ice cream</label>
+  
+  <br>
+  
+  <label for="raccoon-website">Favorite raccoon website</label>
+  <input type="url" id="raccoon-website" name="raccoon-website" required><br>
+  
+  <label for="last-sighting">Date of last raccoon sighting</label>
+  <input type="date" id="last-sighting" name="last-sighting" required><br>
+  
+  <label for="raccoon-story">Favorite raccoon story</label>
+  <textarea id="raccoon-story" name="raccoon-story" required></textarea>
+	    </fieldset>
+		<input type="submit" value="Submit">
+	</form>
 </body>
 </html>
