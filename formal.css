@@ -50,7 +50,6 @@ table {
 .gridpic img {
   width: 400px;
 }
-
 .nav td {
       padding:20px;
       font-family: "Times New Roman";
@@ -124,7 +123,11 @@ table.yellow_bars {
 [class*="col-"] {
   width: 100%;
 }
-
+@media only screen and (max-width : 600px ){
+	.input input{
+	width: 80%;
+}
+}
 @media only screen and (min-width : 600px ){
   .col-t-1 {width: 8.33%;}
   .col-t-2 {width: 16.66%;}
