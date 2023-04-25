@@ -1,27 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Form</title>
-<link href="form.css" rel="stylesheet" type="text/css">
-<link href="formal.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Lab 4</title>
+  <link rel="icon" type="image/x-icon" href="images/racoon_favicon.ico">
+    <link rel="stylesheet" href="formal.css"> 
+ <!-- Not Used. kept for <link rel="stylesheet" href="fun.css">-->
 </head>
-<!-- WIP -->
-<body>
+<row>
+<header class="col-7 col-t-7 header">
+  <h1>Trash Panda Preservation Society</h1>
+  <h2>One animal's trash is another's treasure</h2>
+</header>
+
+ <div class="col-4 col-t-4 headerpicture">
+    <picture>
+    <source media="(max-width:600px)" srcset= "images/Pet-Raccoons.png" >
+    <source media="(max-width:1000px)" srcset= "images/trash_pandas.png" >
+    <source media="(min-width:1000px)" srcset= "images/raccoon_in_central_park.jpg">
+    <img src="images/Pet-Raccoons.png" alt="Raccoon" style="width:auto;">
+   </picture>
+</div>
+</row>
+<main>
+<nav class="col-2 col-t-12">
+<ul class="nav">
+  <li>
+    <div class="dropdown"> <a href="javascript:void(0)">Links</a>
+      <div class="dropdown-content"> <a href="index.html">Home</a> <a href="https://en.wikipedia.org/wiki/Raccoon">Racoon Wikipedia</a> <a href="#">Raccoon Website Link</a> <a href="#">Raccoon Website Link</a> <a href="#">Raccoon Website Link</a> </div>
+      </div>
+  </li>
+  <li><a href="#about">About Raccoons</a></li>
+  <li><a href="#anthem">Rocket's Anthem</a></li>
+  <li><a href="#range">Range</a></li>
+  <li><a href="#pets">Raccoons As Pets</a></li>
+  <li><a href="#fun">Just For Fun</a></li>
+  <li><a href="#cat_food" style="color:red;">Cat Food</a></li>
+  <li><a href="gallery.html">Photos</a></li>
+  <li><a href="membership.html">Membership</a></li>
+</ul>
+</nav>
 	<form>
-	<fieldset>
+	<fieldset class="col-9">
 	  <legend>Name</legend>
-	  <row class="input col-">
-		<label for="fname" class="col-2">First Name:</label>
+		<label for="fname" class="col-1">First Name:</label>
 		<input type="text" name="fname" class="col-3 col-t-11 col-p-11">
-		<label for="fname" class="col-2">Middle Intital:</label>
+		<label for="fname" class="col-1">Middle Intital:</label>
 		<input type="text" name="fname" class="col-1 col-t-1 col-p-11" minlength="1" maxlength="1">
-		<label for="lname" class="col-2">Last Name:</label>
+		<label for="lname" class="col-1">Last Name:</label>
 		<input type="text" name="lname" class="col-3 col-t-5 col-p-11">
-	  </row>
 	</fieldset>
 		<br>
-		<fieldset class="col-">
+		<fieldset class="col-8">
 			<legend>Account</legend>
 			<label>User Name: <input type="text" name="username" maxlength="15"></label><br>
 			<label>Password: <input type="password" name="password" minlength="10"></label><br>
@@ -32,7 +64,7 @@
 			<label><input type="radio" name="subscription" value="Garbage Lord" checked>Garbage Lord (best)</label>
 		</fieldset>
 		<br>
-		<fieldset class="col-">
+		<fieldset class="col-8">
 			<legend>Payment Information</legend>
 			<label>Card type:
 				<select name="cardtype" required>
@@ -101,7 +133,10 @@
   <label for="raccoon-story">Favorite raccoon story</label>
   <textarea id="raccoon-story" name="raccoon-story" required></textarea>
 	    </fieldset>
+		<row>
 		<input type="submit" value="Submit">
+		</row>
 	</form>
-</body>
+	</main>
+	
 </html>
