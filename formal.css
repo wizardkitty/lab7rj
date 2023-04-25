@@ -90,6 +90,14 @@ table {
 .dropdown-content a:hover {
   background-color: #008C6B;
 }
+legend{
+	font-weight: bold;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 20px;
+}
+label{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
 
 .racoonabout {
   background-color: orange; 
