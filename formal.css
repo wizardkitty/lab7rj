@@ -7,6 +7,11 @@ body {
 }
 form input {
 	border-radius: 8px;
+	border-color: blue;
+}
+#raccoon-pic {
+	border: none;
+	border-radius: 0px;
 }
 .row::after {
   content: "";
